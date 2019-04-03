@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- define angular app -->
+<html>
+
+<head>
+    <title>.:: Prof. Paul Harper ::.</title>
+    <!-- SCROLLS -->
+    <!--  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <style type="text/css">
+    .amazingslider-box-1 {
+        margin-left: 0px !important;
+    }
+    
+    .amazingslider-slider-1 {
+        border: 1px solid #969696 !important;
+    }
+    
+    .amazingslider-img-elem-1 {
+        height: 100% !important;
+    }
+    
+    .amazingslider-box-1:nth-of-type(1) {
+        border-top: 5px solid black;
+    }
+
+   /* div.amazingslider-box-1 :nth-child(3) { 
+       visibility: hidden !important;
+    }*/
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        // $(".navbar-default .navbar-nav > li > a").click(function(){
+        //     $(".navbar-default .navbar-nav > li > a").removeClass("menu-active");
+        //     $(".navbar-default .navbar-nav > li > a").addClass("menu-inactive");
+        //     $(this).addClass("menu-active");
+        //      $(this).removeClass("menu-inactive");
+        // });
+
+        //$("div.amazingslider-box-1 :nth-child(3)").hide();
+    // jQuery("div.amazingslider-box-1 :nth-child(3)").css("height","100%");
+    // jQuery("div.amazingslider-box-1 :nth-child(3)").css("height","100%");
+        $("#main").click(function(event) {
+
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                $("button.navbar-toggle").click();
+            }
+        });
+
+        //$(".amazingslider-box-1:nth-of-type(3)").hide();
+
+
+    });
+    </script>
+</head>
+<!-- define angular controller -->
+
+<body ng-app="scotchApp">
+    <div class="container">
+        <nav class=" navbar navbar-default navbar-fixed-top custom-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle outline collapsed" data-toggle="collapse" data-target="#navbar-collapse-able">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="index.html">
+                        <!-- <span id="nav-logo"></span> -->Paul Harper
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-able">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeid" class="menu-inactive" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a class="menu-active" href="profile.html"><i class="fa  fa-user"></i> Profile</a></li>
+                        <li><a class="menu-inactive" href="publications.html"><i class="fa fa-book "></i> Publications</a></li>
+                        <li><a class="menu-inactive" href="research.html"><i class="fa fa-search "></i> Research</a></li>
+                        <li><a class="menu-inactive" href="teaching.html"><i class="fa fa-shield"></i> Teaching</a></li>
+                         <!-- <li><a class="menu-inactive" href="contact.html"><i class="fa fa-comment"></i> Contact</a></li> -->
+                        <!--  <li><a class="btn" href="https://www.cloudpeeps.com/sign_up">Sign up</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="main" style="background-color: #ffffff; margin-top:100px;  margin-bottom: 50px;">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div style="min-height: 500px;  ">
+               
+                <div class="row" align="left"> 
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h5><b>ACTIVITIES AND RESPONSIBILITY</b></h5>
+                        <hr style="background-color:#999; height:1px; border:0px; margin-top:0px;" align="center">
+                    </div>
+                </div>
+
+                <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <table class="table table-bordered">
+                                    <thead>
+                                            <tr role="row" valign="top">
+                                            <td class="sorting_disabled" rowspan="1" colspan="1" width="3%">NO</td>
+                                            <td class="sorting_disabled" rowspan="1" colspan="1">DUTIES</td ></tr>
+                                          <tr>
+                                              <td>1</td>
+                                              <td>Director of Postgraduate Taught Studies <span class="label label-success">2015</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>2</td>
+                                              <td>Deputy Head of School (School of Mathematics, Cardiff University). <span class="label label-success">2013</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>3</td>
+                                              <td>Editor-in-Chief, Health Systems (Palgrave Macmillan).  <span class="label label-success">2011</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>4</td>
+                                              <td>Director of Engagement, School of Mathematics.  <span class="label label-success">2011</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>5</td>
+                                              <td>Director, hmc² (Health Modelling Centre Cymru).  <span class="label label-success">2010</span>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>6</td>
+                                              <td>Head of the Operational Research Group, Cardiff University.  <span class="label label-success">2009</span>
+                                              </td>
+                                          </tr>
+                                           <tr>
+                                              <td>7</td>
+                                              <td>Cluster leader for Operational Research and Statistics, WIMCS.  <span class="label label-success">2008</span>
+                                              </td>
+                                          </tr>
+
+                                           <tr>
+                                              <td>8</td>
+                                              <td>WIMCS Research Chair in Operational Research, Cardiff University.  <span class="label label-success">2007</span>
+                                              </td>
+                                          </tr>
+                                           <tr>
+                                              <td>9</td>
+                                              <td>Senior Lecturer in Operational Research, University of Southampton.  <span class="label label-success">2006 - 07</span>
+                                              </td>
+                                          </tr>
+                                           <tr>
+                                              <td>10</td>
+                                              <td>Lecturer in Operational Research, University of Southampton.  <span class="label label-success">2001 - 06</span>
+                                              </td>
+                                          </tr>
+                                           <tr>
+                                              <td>11</td>
+                                              <td>Research Fellow, Institute of Modelling for Healthcare, University of Southampton.  <span class="label label-success">1997 - 02</span>
+                                              </td>
+                                          </tr> 
+                                          
+                                    </thead>
+                                 </table>    
+                             </div>
+                        </div>
+
+                <div class="row" align="left"> 
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h5><b>EDUCATION</b></h5>
+                        <small>(Qualification), (Institution), (Year).</small>
+                        <hr style="background-color:#999; height:1px; border:0px; margin-top:0px;" align="center">
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                      <td>Practical Leadership for University Management, Institute of Leadership and Management (ILM), 2013
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>PG Certificate in Education, University of Southampton, 2005
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>Ph.D. Mathematics, University of Southampton, 2002
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>M.Sc. Operational Research, University of Southampton, 1996
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>B.Sc. Mathematics and Statistics, University of Bath, 1995  
+                                      </td>
+                                  </tr> 
+                                  
+                            </thead>
+                         </table>    
+                     </div>
+                </div>
+
+                <div class="row" align="left"> 
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h5><b>HONOURS AND AWARDS</b></h5>
+                        <hr style="background-color:#999; height:1px; border:0px; margin-top:0px;" align="center">
+                    </div>
+                </div>
+
+               <div class="row">
+
+                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px">
+                                <div class="thumbnail">
+                                    <div class="row no-margin no-padding">
+                                        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-2 xs-hidden" style="text-align: center;">
+                                            <img src="image/award.jpg" width="100px">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style=" padding: 10px; margin-top: 10px">
+                                               Elected Fellow of the Learned Society of Wales.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Start Widget Awards -->
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px">
+                                <div class="thumbnail">
+                                    <div class="row no-margin no-padding">
+                                        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-2 xs-hidden" style="text-align: center;">
+                                            <img src="image/award.jpg" width="100px">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style=" padding: 10px; margin-top: 10px">
+                                            Named investigator on £5.5m of funded research grants; author of more than 70 peer-reviewed papers and book chapters.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px">
+                                <div class="thumbnail">
+                                    <div class="row no-margin no-padding">
+                                        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-2" style="text-align: center;">
+                                            <img src="image/award.jpg" width="100px">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style=" padding: 10px; margin-top: 10px">
+                                           Twice winner of the Cardiff University Innovation and Impact Prize: 2011  and 2015.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px">
+                                <div class="thumbnail">
+                                    <div class="row no-margin no-padding">
+                                        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-2" style="text-align: center;">
+                                            <img src="image/award.jpg" width="100px">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style=" padding: 10px; margin-top: 10px">
+                                           Editor-in-Chief of Health Systems (Palgrave Macmillan)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px">
+                                <div class="thumbnail">
+                                    <div class="row no-margin no-padding">
+                                        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-2" style="text-align: center;">
+                                            <img src="image/award.jpg" width="100px">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style=" padding: 10px; margin-top: 10px">Winner of Operational Research Society’s Goodeve Medal (2006) for the best paper published in the Journal of the Operational Research Society
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 5px">
+                                <div class="thumbnail">
+                                    <div class="row no-margin no-padding">
+                                        <div class="col-xs-12 col-sm-2 col-md-1 col-lg-2" style="text-align: center;">
+                                            <img src="image/award.jpg" width="100px">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style=" padding: 10px; margin-top: 10px">Winner of the 2006 University of Southampton Vice-Chancellor’s teaching award in “recognition of outstanding contribution to teaching practice and innovation”.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                        
+                        
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <p>
+
+                &copy; 2017 <a target="_blank" href="#" >Paul Harper</a>. All Rights Reserved.
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>

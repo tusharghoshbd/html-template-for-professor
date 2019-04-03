@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- define angular app -->
+<html>
+
+<head>
+    <title>.:: Prof. Paul Harper ::.</title>
+    <!-- SCROLLS -->
+    <!--  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <style type="text/css">
+    .amazingslider-box-1 {
+        margin-left: 0px !important;
+    }
+    
+    .amazingslider-slider-1 {
+        border: 1px solid #969696 !important;
+    }
+    
+    .amazingslider-img-elem-1 {
+        height: 100% !important;
+    }
+    
+    .amazingslider-box-1:nth-of-type(1) {
+        border-top: 5px solid black;
+    }
+    /* div.amazingslider-box-1 :nth-child(3) { 
+       visibility: hidden !important;
+    }*/
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#main").click(function(event) {
+
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                $("button.navbar-toggle").click();
+            }
+        });
+
+        //$(".amazingslider-box-1:nth-of-type(3)").hide();
+        $("#viewallId").click(function(){
+            $(".view-all").toggle();
+        });
+
+    });
+    </script>
+</head>
+<!-- define angular controller -->
+
+<body ng-app="scotchApp">
+    <div class="container">
+        <nav class=" navbar navbar-default navbar-fixed-top custom-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle outline collapsed" data-toggle="collapse" data-target="#navbar-collapse-able">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="index.html">
+                        <!-- <span id="nav-logo"></span> -->Paul Harper
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-able">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeid" class="menu-inactive" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a class="menu-inactive" href="profile.html"><i class="fa  fa-user"></i> Profile</a></li>
+                        <li><a class="menu-inactive" href="publications.html"><i class="fa fa-book "></i> Publications</a></li>
+                        <li><a class="menu-inactive" href="research.html"><i class="fa fa-search "></i> Research</a></li>
+                        <li><a class="menu-active" href="teaching.html"><i class="fa fa-shield"></i> Teaching</a></li>
+                        <!-- <li><a class="menu-inactive" href="contact.html"><i class="fa fa-comment"></i> Contact</a></li> -->
+                        <!--  <li><a class="btn" href="https://www.cloudpeeps.com/sign_up">Sign up</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="main" style="background-color: #ffffff; margin-top:100px;  margin-bottom: 50px;">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div style="min-height: 500px;" class="teaching">
+                <div class="row" align="left">
+                    <div class="col-xs-12  col-lg-8 col-md-8 col-sm-8">
+                        <p class="text-justify"> I'm the Director of Postgraduate Taught (PGT) Programmes within the Cardiff School of Mathematics. </p>
+                        <ul>
+                            <li>MSc in Operational Research and Applied Statistics</li>
+                            <li>MSc in Operational Research, Applied Statistics and Financial Risk</li>
+                            <li>MSc in Data Science and Analytics</span>
+                            </li>
+                        </ul>
+                        <br/>
+                        <p class="text-justify">More information on these programmes an be found <a href="http://www.cardiff.ac.uk/mathematics/courses/postgraduate-taught"> here</a>.</p>
+                        <br/>
+
+                        <p class="text-justify">It's been a privileged opportunity (if not somewhat hard work!) to have designed and established these MSc programmes, in conjunction with colleagues and external organisations (especially
+                            <a href="http://www.statistics.gov.uk/default.asp" target="_blank">Office for National Statistics </a> and
+                            <a href="http://wales.gov.uk/splash;jsessionid=L1bDTXHD24NKPsmfYtm8TyCVQ2m7RlRvjv2hMD0nLWLLvGvlbBGw!1215994767?orig=/" target="_blank">Welsh Government</a> ). The hard work of all the teaching and admin staff involved with these programmes, and the innovative content and structure, was recognised through the award of the Cardiff University 2011
+                            <a href="http://www.innovation-network.org.uk/innovation-awards/awards/innovation-prize-6.aspx" target="_blank">Innovation Prize</a>.</p>
+
+                            <br/><br/>
+                     <p>
+                         <h5><b> CURRENT TEACHING DUTIES</b></h5> <br/>
+
+                        <ul class="list">
+                            <li>MAT001 &ndash; OR Methods</li>
+                            <li>MAT003 &ndash; Communicating and Research Skills</li>
+                            <li>MA0261 &ndash;&nbsp;Operational Research</li>
+                            <li>MAT009 &ndash; Healthcare Modelling</li>
+                        </ul>
+                        <br/>
+                     </p>
+                     <div class="row">
+                         
+                         <div class="col-lg-12 col-md-12 col-sm-12">
+                          <h5><b> CURRENT AND COMPLETED PHD STUDENTS</b></h5> <br/>
+                                <div class="panel panel-default">
+                                    <div class="panel-body p-b-10 p-t-10 text-center">
+                                        
+                                        <ul class="users-list clearfix">                                
+                                            <li>
+                                               
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+
+                                                <a class="users-list-name" href="#">Sarie Brice</a>                                             
+                                            </li>
+                                                                        
+                                            <li>
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                                <a class="users-list-name" href="#">Geraint Palmer</a>                                               
+                                            </li>
+                                            <li>
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Isabelle Percy</a>                                               
+                                            </li>
+                                            <li>
+                                               
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                              
+                                                <a class="users-list-name" href="#">Mark Tuson</a>                                             
+                                            </li>
+                                            <li>
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Elizabeth Rowse (2015)</a>                                             
+                                            </li>
+                                            <li>
+                                           
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Robert Shone (2014)</a>                                               
+                                            </li>
+                                            <li>
+                                                
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Angelico Fetta (2014)</a>                                             
+                                            </li>
+                                            <li>
+                                            
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                              
+                                                <a class="users-list-name" href="#">Marion Penn (2014)</a>                                               
+                                            </li>
+
+
+
+
+                                            <li class="view-all">
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Leanne Smith (2013)</a>                                             
+                                            </li>
+                                            <li class="view-all">
+                                           
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Julie Vile (2013)</a>                                               
+                                            </li>
+                                            <li class="view-all">
+                                                
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Joe Viana (2011)</a>                                             
+                                            </li>
+                                            <li class="view-all">
+                                            
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                              
+                                                <a class="users-list-name" href="#">Shivam Desai (2011)</a>                                               
+                                            </li>
+
+
+
+
+
+
+
+
+                                            <li class="view-all">
+                                                
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Dileep Da Silva (2011)</a>                                             
+                                            </li>
+                                            <li class="view-all">
+                                            
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                              
+                                                <a class="users-list-name" href="#">Michael Thorwarth (2011)</a>                                               
+                                            </li>
+
+
+
+
+                                            <li class="view-all">
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Evandro Leite (2009)</a>                                             
+                                            </li>
+                                            <li class="view-all">
+                                           
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Honora Smith (2008)</a>                                               
+                                            </li>
+                                            <li class="view-all">
+                                                
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                               
+                                                <a class="users-list-name" href="#">Jennifer Sykes (2007)</a>                                             
+                                            </li>
+                                            <li class="view-all">
+                                            
+                                                <img src="image/users.jpg" class="img-circle img-thumbnail img-thumbnail-avatar" style="width:80px; height:75px;">
+                                              
+                                                <a class="users-list-name" href="#">Naomi Powell (2006):</a>                                               
+                                            </li>
+                                        </ul>   
+
+                                    </div>
+                                    <div class="panel-footer text-center text-size-small f-w-500">
+                                        <a href="javascript:void(0)" id="viewallId"><small>View all </small></a>                      </div>
+                                </div><!-- / .panel -->
+                            </div>
+                     </div>
+
+                    </div>
+                    <div class="col-xs-12  col-lg-4 col-md-4 col-sm-4">
+                        <div class="thumbnail">
+                                <img src="image/MSc Class Photo 2011.jpg" class="firstmscimage ">
+                                <div class="caption">
+                                    <p>Our first MSc cohort (2010/11)</p>
+                                </div>
+                        </div>
+                        <br/>
+                        <div class="thumbnail">
+                                <img src="image/InnovationPrize.jpg" class="firstmscimage ">
+                                <div class="caption">
+                                    <p><font size="3" face="'trebuchet ms', sans-serif">Receiving the Innovation Prize</font></p>
+                                    <p><font face="'trebuchet ms', sans-serif"><b><font size="1">(</font></b><span style="color:rgb(51,51,51);line-height:14px"><font size="1">L-R: Prof Paul Harper (Cardiff University); Stuart Gall (Fusion IP); Stephen Penneck (ONS); Martin Brand (ONS);&nbsp;</font></span></font>
+                                        
+                                        <font face="'trebuchet ms', sans-serif"><span style="color:rgb(51,51,51);line-height:14px"><font size="1">Prof Hywel Thomas (Cardiff University); Ceri Delemore (Geldards LLP) and Les Rees (Cardiff University)</font></span></font>
+
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+       <p>
+
+                &copy; 2017 <a target="_blank" href="#" >Paul Harper</a>. All Rights Reserved.
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>

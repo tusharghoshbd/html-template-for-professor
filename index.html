@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- define angular app -->
+<html>
+
+<head>
+    <title>.:: Prof. Paul Harper ::.</title>
+    <!-- SCROLLS -->
+    <!--  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <style type="text/css">
+    .amazingslider-box-1 {
+        margin-left: 0px !important;
+    }
+    
+    .amazingslider-slider-1 {
+        border: 1px solid #969696 !important;
+    }
+    
+    .amazingslider-img-elem-1 {
+        height: 100% !important;
+    }
+    
+    .amazingslider-box-1:nth-of-type(1) {
+        border-top: 5px solid black;
+    }
+
+   /* div.amazingslider-box-1 :nth-child(3) { 
+       visibility: hidden !important;
+    }*/
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        // $(".navbar-default .navbar-nav > li > a").click(function(){
+        //     $(".navbar-default .navbar-nav > li > a").removeClass("menu-active");
+        //     $(".navbar-default .navbar-nav > li > a").addClass("menu-inactive");
+        //     $(this).addClass("menu-active");
+        //      $(this).removeClass("menu-inactive");
+        // });
+
+        //$("div.amazingslider-box-1 :nth-child(3)").hide();
+    // jQuery("div.amazingslider-box-1 :nth-child(3)").css("height","100%");
+    // jQuery("div.amazingslider-box-1 :nth-child(3)").css("height","100%");
+        $("#main").click(function(event) {
+
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                $("button.navbar-toggle").click();
+            }
+        });
+
+        //$(".amazingslider-box-1:nth-of-type(3)").hide();
+
+
+    });
+    </script>
+</head>
+<!-- define angular controller -->
+
+<body ng-app="scotchApp">
+    <div class="container">
+        <nav class=" navbar navbar-default navbar-fixed-top custom-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle outline collapsed" data-toggle="collapse" data-target="#navbar-collapse-able">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="index.html">
+                        <!-- <span id="nav-logo"></span> -->Paul Harper
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-able">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeid" class="menu-active" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a class="menu-inactive" href="profile.html"><i class="fa  fa-user"></i> Profile</a></li>
+                        <li><a class="menu-inactive" href="publications.html"><i class="fa fa-book "></i> Publications</a></li>
+                        <li><a class="menu-inactive" href="research.html"><i class="fa fa-search "></i> Research</a></li>
+                        <li><a class="menu-inactive" href="teaching.html"><i class="fa fa-shield"></i> Teaching</a></li>
+                         <!-- <li><a class="menu-inactive" href="contact.html"><i class="fa fa-comment"></i> Contact</a></li> -->
+                        <!--  <li><a class="btn" href="https://www.cloudpeeps.com/sign_up">Sign up</a></li> -->
+                    </ul>
+                </div>
+                <!-- 
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Angular Routing Example</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+      </ul> -->
+            </div>
+        </nav>
+        <div id="main" style="background-color: #ffffff; margin-top:100px;  margin-bottom: 50px;">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div style="min-height: 500px;  ">
+                <div class="row no-margin">
+                    <!-- <div class="sectionTitle">
+            <h1>About</h1>
+            <p>I'm Brian, a highly motivated guy with more than a <span>decade of experience</span> in Design and Development. I've worked with several larger as well as smaller brands and I'm a fan of a good challenge.</p>
+        </div> -->
+                    <div class="col-md-12 about">
+                        <div class="row no-margin">
+                            <div class="col-md-4 col-sm-4 col-xs-12 " style="text-align: center; vertical-align: middle;">
+                                <img src="image/Paul_Harper.jpg" alt="">
+                                <!-- <h4>Brian Cooper</h4> -->
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-12 profile">
+                                <ul class="info">
+                                    <li>
+                                        <h3>Professor Paul R. Harper</h3> 
+                                        Deputy Head of School
+                                        <br/> Professor of Operational Research
+                                        <br/>  <a href="http://www.cardiff.ac.uk/">Cardiff University</a> 
+                                    </li>
+                                    <li><span>Tel:</span> 029 2087 6841</li>
+                                    <li><span>Email:</span> <a href="mailto:harper@cardiff.ac.uk">harper@cardiff.ac.uk</a></li>
+                                </ul>
+                                <ul class="social">
+                                    <li>
+                                        <a href="#" class=""><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" ><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-md-4 col-sm-4 col-xs-12 "> -->
+                                   <!--  <ul class="info">
+                                    <li>
+                                        Total  Publication 
+                                    </li>
+                                    <li>Articles  Citation</li>
+                                    <li>Sum of the Times Cited</li>
+                                    <li>h-index</li>
+                                </ul> -->
+                           <!--  <table class="table table-bordered">
+                                    <thead>
+                                          <tr>
+                                              <td>&nbsp;Total  Publication</td><td>&nbsp;
+                                                                
+                                              <a href="http://www.researcherid.com/#" target="_blank"> 
+                                              152</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td>&nbsp;Articles  Citation </td>
+                                              <td>&nbsp;
+                                                    <a href="http://www.researcherid.com/#" target="_blank"> 152</a>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                                <td>&nbsp;Sum of the Times Cited </td>
+                                                <td>&nbsp;
+                                                          <a href="http://www.researcherid.com/#" target="_blank"> 567</a>
+                                          
+                                                </td>
+                                          </tr>
+                                         
+                                          
+                                          <tr>
+                                                <td>&nbsp;h-index </td><td>&nbsp;
+                                           
+                                                             <a href="http://www.researcherid.com/#" target="_blank"> 27</a>
+                                                </td>
+                                          </tr>
+                                            
+                                    </thead>
+                                 </table> -->
+                           <!--  </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <br/>
+                        <br/>
+                        <p style="text-align: justify;">
+                            I've a strong work ethic with a 'can do' attitude (and I expect those I work and collaborate with to have the same), but will always offer constructive feedback (and appreciate the same) and will recognise and reward success (I can't understand why people find it so hard to say 'thank you' or 'well done' when it is totally merited). One of the real joys of being an academic is supervising and working with talented early career researchers (PhD students, post-docs, young lecturers) - learning and generating great research ideas is certainly a two-way process.
+                        </p>
+                        <p style="text-align: justify;">
+                            I have a really wonderful family (married with three 3 children). My other passions in life are my faith, sport (running, rugby, football, tennis, cricket, working out in the gym - in fact I'll have a go at pretty much any sport!) and travel. I like to keep a humorous perspective on life and find enjoyment in making others smile. Laughter is the language of the soul :)
+                        </p>
+                        <p style="text-align: justify;">
+                            I'm frustrated In life that I never made it to 6ft tall (half an inch short!) and rapidly balding (thanks Dad!!).
+                        </p>
+                        <p style="text-align: justify;">
+                            My short work bio is shown below, including appointments, qualifications, honours and editorships, and professional activities.
+                        </p>
+                        <p style="text-align: justify;">
+                            In celebration of 10 years from my first lectureship (in 2001), I put together a reflective sketch available here.
+                        </p>
+                    </div>
+                    <div class="col-md-12 ">
+                        <br/>
+                        <div id="amazingslider-wrapper-1" style=" display:block;position:relative;max-width:700px;margin:0px auto 98px;">
+                            <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                                <ul class="amazingslider-slides" style="display:none;">
+                                    <li><img src="image/paul-video-image.jpg"  title="I made with my family to convey the principles of active learning" />
+                                        <video preload="none" src="https://youtu.be/Bjio9RitzNU"></video>
+                                    </li>
+
+                                    <li><img src="image/paul-slide1.jpg" title="School Outreach" />
+                                    </li>
+                                    
+                                    <li>
+                                        <img src="image/slide-MSc-Class.jpg" alt="Our first MSc cohort (2010/11)" title="Our first MSc cohort (2010/11)" />
+                                    </li>
+                                    <li><img src="image/slide-outreach.jpg" alt="School Outreach" title="School Outreach" />
+                                    </li>
+                                </ul>
+                                <ul class="amazingslider-thumbnails" style="display:none;">
+                                    <li><img src="image/paul-video-image.jpg" /></li>
+                                    <li><img src="image/paul-slide1.jpg" alt="School Outreach" title="School Outreach" /></li>
+                                    
+                                    <li>
+                                        <img src="image/slide-MSc-Class.jpg" alt="Our first MSc cohort (2010/11)" title="Our first MSc cohort (2010/11)" />
+                                    </li>
+                                    <li><img src="image/slide-outreach.jpg" alt="School Outreach" title="School Outreach" /></li>
+                                </ul>
+                                <div class="amazingslider-engine"><a href="http://amazingslider.com" title="jQuery Slideshow">jQuery Slideshow</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <p>
+
+                &copy; 2017 <a target="_blank" href="#" >Paul Harper</a>. All Rights Reserved.
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>

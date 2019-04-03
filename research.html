@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- define angular app -->
+<html>
+
+<head>
+    <title>.:: Prof. Paul Harper ::.</title>
+    <!-- SCROLLS -->
+    <!--  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <style type="text/css">
+    .amazingslider-box-1 {
+        margin-left: 0px !important;
+    }
+    
+    .amazingslider-slider-1 {
+        border: 1px solid #969696 !important;
+    }
+    
+    .amazingslider-img-elem-1 {
+        height: 100% !important;
+    }
+    
+    .amazingslider-box-1:nth-of-type(1) {
+        border-top: 5px solid black;
+    }
+
+   /* div.amazingslider-box-1 :nth-child(3) { 
+       visibility: hidden !important;
+    }*/
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        // $(".navbar-default .navbar-nav > li > a").click(function(){
+        //     $(".navbar-default .navbar-nav > li > a").removeClass("menu-active");
+        //     $(".navbar-default .navbar-nav > li > a").addClass("menu-inactive");
+        //     $(this).addClass("menu-active");
+        //      $(this).removeClass("menu-inactive");
+        // });
+
+        //$("div.amazingslider-box-1 :nth-child(3)").hide();
+    // jQuery("div.amazingslider-box-1 :nth-child(3)").css("height","100%");
+    // jQuery("div.amazingslider-box-1 :nth-child(3)").css("height","100%");
+        $("#main").click(function(event) {
+
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                $("button.navbar-toggle").click();
+            }
+        });
+
+        //$(".amazingslider-box-1:nth-of-type(3)").hide();
+
+
+    });
+    </script>
+</head>
+<!-- define angular controller -->
+
+<body ng-app="scotchApp">
+    <div class="container">
+        <nav class=" navbar navbar-default navbar-fixed-top custom-menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle outline collapsed" data-toggle="collapse" data-target="#navbar-collapse-able">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="index.html">
+                        <!-- <span id="nav-logo"></span> -->Paul Harper
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-able">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeid" class="menu-inactive" href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a class="menu-inactive" href="profile.html"><i class="fa  fa-user"></i> Profile</a></li>
+                        <li><a class="menu-inactive" href="publications.html"><i class="fa fa-book "></i> Publications</a></li>
+                        <li><a class="menu-active" href="research.html"><i class="fa fa-search "></i> Research</a></li>
+                        <li><a class="menu-inactive" href="teaching.html"><i class="fa fa-shield"></i> Teaching</a></li>
+                         <!-- <li><a class="menu-inactive" href="contact.html"><i class="fa fa-comment"></i> Contact</a></li> -->
+                        <!--  <li><a class="btn" href="https://www.cloudpeeps.com/sign_up">Sign up</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="main" style="background-color: #ffffff; margin-top:100px;  margin-bottom: 50px;">
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div style="min-height: 500px;  ">
+                <div class="row no-margin">
+                    <div class="col-md-12">
+                            
+                           <h4>Research Page is under construction.</h4>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <p>
+
+                &copy; 2017 <a target="_blank" href="#" >Paul Harper</a>. All Rights Reserved.
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>
